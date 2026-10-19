@@ -1,5 +1,4 @@
 <script>
-	import MediaSlot from '$lib/components/MediaSlot.svelte';
 	import { missionFacts, vehicleSnapshot, keyFindings } from '$lib/data/requirements.js';
 
 	const snapshot = vehicleSnapshot.slice(0, 6);
@@ -37,8 +36,6 @@
 				{/each}
 			</dl>
 		</div>
-
-		<MediaSlot label="Hero vehicle photo / render" kind="image" ratio="4 / 5" />
 	</div>
 </section>
 
@@ -84,21 +81,14 @@
 </section>
 
 <section class="section section-alt">
-	<div class="container media-teaser">
-		<div>
-			<p class="eyebrow">Media</p>
-			<h2>Follow the build</h2>
-			<p class="lede">
-				Photos, CAD renders, and flight test footage will land here as the vehicle comes
-				together through the year.
-			</p>
-			<a class="btn btn-outline" href="/media">Visit the media gallery →</a>
-		</div>
-		<div class="grid grid-3">
-			<MediaSlot label="Vehicle photo" />
-			<MediaSlot label="CAD render" />
-			<MediaSlot label="Flight test video" kind="video" />
-		</div>
+	<div class="container">
+		<p class="eyebrow">Media</p>
+		<h2>Follow the build</h2>
+		<p class="lede">
+			Photos, CAD renders, and flight test footage will land here as the vehicle comes
+			together through the year.
+		</p>
+		<a class="btn btn-outline" href="/media">Visit the media gallery →</a>
 	</div>
 </section>
 
@@ -121,19 +111,6 @@
 <style>
 	.hero {
 		padding: 4rem 0 4.5rem;
-	}
-
-	.hero-grid {
-		display: grid;
-		grid-template-columns: 1.15fr 0.85fr;
-		gap: 3rem;
-		align-items: center;
-	}
-
-	@media (max-width: 900px) {
-		.hero-grid {
-			grid-template-columns: 1fr;
-		}
 	}
 
 	.cta-row {
@@ -186,19 +163,6 @@
 
 	.findings li {
 		font-size: 1.05rem;
-	}
-
-	.media-teaser {
-		display: grid;
-		grid-template-columns: 0.9fr 1.3fr;
-		gap: 2.5rem;
-		align-items: center;
-	}
-
-	@media (max-width: 900px) {
-		.media-teaser {
-			grid-template-columns: 1fr;
-		}
 	}
 
 	.cta-band {

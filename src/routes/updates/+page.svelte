@@ -1,6 +1,5 @@
 <script>
 	import { updates, upcoming } from '$lib/data/updates.js';
-	import MediaSlot from '$lib/components/MediaSlot.svelte';
 
 	function formatDate(iso) {
 		return new Date(iso + 'T00:00:00').toLocaleDateString('en-US', {
@@ -61,9 +60,6 @@
 						</div>
 						<h3>{u.title}</h3>
 						<p>{u.summary}</p>
-						{#if u.media.length === 0}
-							<MediaSlot label="Photo / video from this update" ratio="16 / 7" />
-						{/if}
 					</div>
 				</article>
 			{/each}
@@ -141,9 +137,5 @@
 
 	.entry-body h3 {
 		margin: 0 0 0.4rem;
-	}
-
-	.entry-body :global(.slot) {
-		margin-top: 1rem;
 	}
 </style>

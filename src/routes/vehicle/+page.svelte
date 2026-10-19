@@ -1,5 +1,4 @@
 <script>
-	import MediaSlot from '$lib/components/MediaSlot.svelte';
 	import SoftwareFlowDiagram from '$lib/components/SoftwareFlowDiagram.svelte';
 	import {
 		vehicleSnapshot,
@@ -33,31 +32,15 @@
 	</div>
 </section>
 
-<section class="section">
-	<div class="container">
-		<p class="eyebrow">Vehicle Design Documentation</p>
-		<h2>Vehicle photos &amp; renders</h2>
-		<p class="lede">CAD renders, in-progress builds, and flight photos will fill this gallery as they're produced.</p>
-		<div class="grid grid-3">
-			<MediaSlot label="Full vehicle render" ratio="4 / 3" />
-			<MediaSlot label="Payload bay detail" ratio="4 / 3" />
-			<MediaSlot label="Transition flight test" kind="video" ratio="4 / 3" />
-		</div>
-	</div>
-</section>
-
 <section class="section section-alt">
 	<div class="container">
 		<p class="eyebrow">Hardware Architecture</p>
 		<h2>Subsystem breakdown</h2>
-		<div class="arch-grid">
-			<MediaSlot label="Labeled hardware architecture diagram" kind="diagram" ratio="1 / 1" />
-			<ul class="subsystem-list">
-				{#each hardwareSubsystems as s (s)}
-					<li>{s}</li>
-				{/each}
-			</ul>
-		</div>
+		<ul class="subsystem-list">
+			{#each hardwareSubsystems as s (s)}
+				<li>{s}</li>
+			{/each}
+		</ul>
 	</div>
 </section>
 
@@ -141,10 +124,6 @@
 								<p>{o}</p>
 							{/each}
 						</div>
-					{/if}
-
-					{#if p.title === 'Search, Detect & Deploy'}
-						<MediaSlot label="Entry & drop point geometry sketch" kind="diagram" ratio="16 / 9" />
 					{/if}
 				</div>
 			{/each}
@@ -252,24 +231,11 @@
 		padding: 3.5rem 0;
 	}
 
-	.arch-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2.5rem;
-		align-items: center;
-		margin-top: 1.5rem;
-	}
-
-	@media (max-width: 800px) {
-		.arch-grid {
-			grid-template-columns: 1fr;
-		}
-	}
-
 	.subsystem-list {
 		display: grid;
 		gap: 0.9rem;
 		padding-left: 1.2rem;
+		margin-top: 1.5rem;
 		font-weight: 600;
 		color: var(--blue);
 	}
@@ -365,10 +331,6 @@
 	.open-note p {
 		margin: 0;
 		font-size: 0.9rem;
-	}
-
-	.phase-card :global(.slot) {
-		margin-top: 0.75rem;
 	}
 
 	.note {

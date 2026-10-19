@@ -1,22 +1,18 @@
 <script>
-	import MediaSlot from '$lib/components/MediaSlot.svelte';
 	import { milestones } from '$lib/data/requirements.js';
 
 	const categories = [
 		{
 			title: 'Vehicle',
-			description: 'Full builds, CAD renders, and close-ups of individual subsystems.',
-			kind: 'image'
+			description: 'Full builds, CAD renders, and close-ups of individual subsystems.'
 		},
 		{
 			title: 'Testing',
-			description: 'Wind tunnel runs, drop tests, and ground / flight testing footage.',
-			kind: 'video'
+			description: 'Wind tunnel runs, drop tests, and ground / flight testing footage.'
 		},
 		{
 			title: 'Team & Events',
-			description: 'Mass meetings, design reviews, competition travel, and team life.',
-			kind: 'image'
+			description: 'Mass meetings, design reviews, competition travel, and team life.'
 		}
 	];
 
@@ -95,7 +91,7 @@
 		<div class="grid grid-3">
 			{#each categories as cat (cat.title)}
 				<div class="category-block">
-					<MediaSlot label={cat.title} kind={cat.kind} ratio="4 / 3" />
+					<h3>{cat.title}</h3>
 					<p>{cat.description}</p>
 				</div>
 			{/each}
