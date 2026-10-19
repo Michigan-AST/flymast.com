@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" role="img" aria-label="MAST logo">
+	<title>MAST — Michigan Autonomous Security Team</title>
+
+	<!-- Gold crescent flowing into a ribbon that sweeps up to the drone (sits behind the ladder stripes).
+	     This is a single variable-width ribbon: a smooth centerline spline offset by a tapering
+	     half-width on each side, so it reads as one continuous stroke rather than patched blobs. -->
+	<path
+		fill="#FFCB05"
+		d="M 195.3,257.5 L 197.4,257.4 L 199.9,257.4 L 202.8,257.3 L 205.9,257.2 L 209.3,257.1 L 213.0,256.9 L 216.8,256.8 L 220.8,256.7 L 225.0,256.6 L 229.2,256.5 L 233.4,256.5 L 237.6,256.5 L 241.8,256.6 L 245.9,256.8 L 249.9,257.0 L 253.6,257.2 L 257.2,257.6 L 260.4,258.0 L 263.5,258.5 L 266.5,259.2 L 269.7,259.9 L 272.9,260.8 L 276.3,261.7 L 279.7,262.8 L 283.3,263.8 L 287.0,265.0 L 290.8,266.1 L 294.7,267.2 L 298.7,268.3 L 302.8,269.4 L 307.1,270.4 L 311.5,271.2 L 316.1,272.0 L 320.7,272.5 L 325.5,272.9 L 330.3,273.0 L 335.0,272.9 L 339.4,272.6 L 343.9,272.2 L 348.3,271.7 L 352.7,271.0 L 357.0,270.3 L 361.3,269.4 L 365.6,268.5 L 369.8,267.5 L 373.9,266.4 L 378.1,265.4 L 382.1,264.2 L 386.2,263.1 L 390.2,262.0 L 394.1,260.8 L 398.0,259.7 L 401.9,258.7 L 405.7,257.6 L 409.6,256.6 L 413.5,255.5 L 417.4,254.5 L 421.2,253.4 L 425.1,252.3 L 428.9,251.2 L 432.8,250.0 L 436.7,248.8 L 440.5,247.6 L 444.4,246.4 L 448.3,245.1 L 452.3,243.8 L 456.2,242.4 L 460.2,241.0 L 464.2,239.5 L 468.2,238.0 L 472.3,236.4 L 476.4,234.8 L 480.5,233.0 L 484.8,231.2 L 489.1,229.4 L 493.4,227.4 L 497.8,225.4 L 502.2,223.4 L 506.6,221.3 L 511.0,219.2 L 515.4,217.1 L 519.8,214.9 L 524.1,212.8 L 528.3,210.6 L 532.5,208.4 L 536.6,206.3 L 540.6,204.2 L 544.5,202.1 L 548.3,200.1 L 551.9,198.1 L 555.5,196.1 L 559.0,194.1 L 562.5,192.0 L 565.8,190.0 L 569.2,187.9 L 572.4,185.8 L 575.6,183.8 L 578.6,181.7 L 581.6,179.7 L 584.5,177.8 L 587.3,175.9 L 590.1,174.0 L 592.7,172.2 L 595.2,170.5 L 597.7,168.8 L 600.0,167.3 L 602.2,165.8 L 604.3,164.4 L 606.4,163.1 L 608.3,161.9 L 610.2,160.7 L 611.9,159.6 L 613.6,158.6 L 615.2,157.6 L 616.8,156.6 L 618.2,155.7 L 619.6,154.9 L 620.9,154.1 L 622.1,153.3 L 623.2,152.6 L 624.3,152.0 L 625.3,151.4 L 626.2,150.8 L 627.1,150.3 L 627.9,149.8 L 628.6,149.4 L 627.4,146.6 L 626.6,146.9 L 625.7,147.1 L 624.8,147.4 L 623.7,147.6 L 622.6,147.9 L 621.4,148.2 L 620.1,148.6 L 618.7,149.0 L 617.2,149.4 L 615.6,149.8 L 613.9,150.3 L 612.2,150.9 L 610.3,151.5 L 608.4,152.2 L 606.3,152.9 L 604.2,153.7 L 602.0,154.6 L 599.7,155.6 L 597.2,156.6 L 594.7,157.8 L 592.1,159.0 L 589.4,160.4 L 586.6,161.7 L 583.7,163.2 L 580.8,164.7 L 577.7,166.2 L 574.6,167.8 L 571.5,169.3 L 568.2,170.9 L 564.9,172.6 L 561.6,174.2 L 558.2,175.8 L 554.7,177.3 L 551.2,178.9 L 547.7,180.4 L 544.1,181.9 L 540.4,183.4 L 536.5,185.0 L 532.5,186.6 L 528.3,188.2 L 524.1,189.8 L 519.8,191.5 L 515.4,193.1 L 511.0,194.8 L 506.6,196.4 L 502.1,198.1 L 497.7,199.6 L 493.2,201.2 L 488.8,202.7 L 484.4,204.1 L 480.1,205.5 L 475.8,206.8 L 471.7,208.1 L 467.6,209.2 L 463.7,210.3 L 459.7,211.3 L 455.8,212.2 L 452.0,213.1 L 448.1,213.9 L 444.3,214.7 L 440.5,215.5 L 436.7,216.2 L 433.0,216.9 L 429.2,217.5 L 425.4,218.1 L 421.6,218.8 L 417.8,219.4 L 413.9,220.0 L 410.1,220.6 L 406.2,221.2 L 402.2,221.8 L 398.3,222.4 L 394.2,223.0 L 390.1,223.7 L 386.1,224.3 L 382.0,225.0 L 378.0,225.6 L 374.0,226.2 L 370.0,226.8 L 366.1,227.4 L 362.2,227.9 L 358.4,228.4 L 354.6,228.9 L 350.8,229.3 L 347.1,229.7 L 343.5,230.0 L 339.9,230.3 L 336.4,230.6 L 332.9,230.8 L 329.7,231.0 L 326.6,231.1 L 323.5,231.1 L 320.3,231.0 L 316.9,230.8 L 313.4,230.5 L 309.8,230.1 L 306.1,229.7 L 302.3,229.2 L 298.4,228.8 L 294.3,228.3 L 290.2,227.9 L 286.0,227.5 L 281.8,227.2 L 277.4,227.1 L 273.0,227.0 L 268.6,227.1 L 264.1,227.5 L 259.6,228.0 L 255.2,228.8 L 250.8,229.9 L 246.4,231.1 L 242.0,232.6 L 237.7,234.1 L 233.5,235.8 L 229.3,237.6 L 225.2,239.4 L 221.3,241.3 L 217.5,243.1 L 213.8,244.9 L 210.3,246.7 L 207.1,248.4 L 204.0,249.9 L 201.3,251.4 L 198.8,252.6 L 196.6,253.7 L 194.7,254.5 Z"
+	/>
+
+	<!-- A graphic: navy ladder stripes (painted over the ribbon) -->
+	<g fill="#00274C">
+		<rect x="318.7" y="162.0" width="14.2" height="5.0" rx="1.5" />
+		<rect x="308.0" y="171.1" width="18.8" height="5.0" rx="1.5" />
+		<rect x="297.3" y="180.2" width="23.2" height="5.0" rx="1.5" />
+		<rect x="286.6" y="189.2" width="27.8" height="5.0" rx="1.5" />
+		<rect x="275.9" y="198.3" width="32.2" height="5.0" rx="1.5" />
+		<rect x="265.2" y="207.3" width="36.8" height="5.0" rx="1.5" />
+		<rect x="254.5" y="216.4" width="41.2" height="5.0" rx="1.5" />
+		<rect x="243.8" y="225.5" width="45.8" height="5.0" rx="1.5" />
+		<rect x="233.2" y="234.5" width="50.2" height="5.0" rx="1.5" />
+		<rect x="222.5" y="243.6" width="54.8" height="5.0" rx="1.5" />
+		<rect x="211.8" y="252.7" width="59.2" height="5.0" rx="1.5" />
+		<rect x="201.1" y="261.7" width="63.8" height="5.0" rx="1.5" />
+		<rect x="190.4" y="270.8" width="68.2" height="5.0" rx="1.5" />
+		<rect x="179.7" y="279.8" width="72.8" height="5.0" rx="1.5" />
+		<rect x="169.0" y="288.9" width="77.2" height="5.0" rx="1.5" />
+		<rect x="158.3" y="298.0" width="81.8" height="5.0" rx="1.5" />
+		<rect x="327.1" y="162.0" width="14.2" height="5.0" rx="1.5" />
+		<rect x="333.3" y="171.1" width="18.8" height="5.0" rx="1.5" />
+		<rect x="339.5" y="180.2" width="23.2" height="5.0" rx="1.5" />
+		<rect x="345.7" y="189.2" width="27.8" height="5.0" rx="1.5" />
+		<rect x="351.8" y="198.3" width="32.2" height="5.0" rx="1.5" />
+		<rect x="358.0" y="207.3" width="36.8" height="5.0" rx="1.5" />
+		<rect x="364.2" y="216.4" width="41.2" height="5.0" rx="1.5" />
+		<rect x="370.4" y="225.5" width="45.8" height="5.0" rx="1.5" />
+		<rect x="376.6" y="234.5" width="50.2" height="5.0" rx="1.5" />
+		<rect x="382.8" y="243.6" width="54.8" height="5.0" rx="1.5" />
+		<rect x="389.0" y="252.7" width="59.2" height="5.0" rx="1.5" />
+		<rect x="395.2" y="261.7" width="63.8" height="5.0" rx="1.5" />
+		<rect x="401.3" y="270.8" width="68.2" height="5.0" rx="1.5" />
+		<rect x="407.5" y="279.8" width="72.8" height="5.0" rx="1.5" />
+		<rect x="413.7" y="288.9" width="77.2" height="5.0" rx="1.5" />
+		<rect x="419.9" y="298.0" width="81.8" height="5.0" rx="1.5" />
+	</g>
+
+	<!-- Quadcopter drone — lifted clear of the wordmark, sitting above the S/T gap -->
+	<g fill="#FFCB05">
+		<!-- arms -->
+		<rect x="625" y="93" width="72" height="11" rx="5.5" transform="rotate(-18 661 98.5)" />
+		<rect x="699" y="93" width="72" height="11" rx="5.5" transform="rotate(18 735 98.5)" />
+		<rect x="625" y="129" width="72" height="11" rx="5.5" transform="rotate(18 661 134.5)" />
+		<rect x="699" y="129" width="72" height="11" rx="5.5" transform="rotate(-18 735 134.5)" />
+
+		<!-- propeller rings -->
+		<ellipse cx="636" cy="82" rx="33" ry="13" transform="rotate(-18 636 82)" fill="none" stroke="#FFCB05" stroke-width="8.5" />
+		<ellipse cx="760" cy="82" rx="33" ry="13" transform="rotate(18 760 82)" fill="none" stroke="#FFCB05" stroke-width="8.5" />
+		<ellipse cx="636" cy="146" rx="33" ry="13" transform="rotate(18 636 146)" fill="none" stroke="#FFCB05" stroke-width="8.5" />
+		<ellipse cx="760" cy="146" rx="33" ry="13" transform="rotate(-18 760 146)" fill="none" stroke="#FFCB05" stroke-width="8.5" />
+
+		<!-- motor hubs -->
+		<circle cx="640" cy="97" r="6" />
+		<circle cx="756" cy="97" r="6" />
+		<circle cx="640" cy="130" r="6" />
+		<circle cx="756" cy="130" r="6" />
+
+		<!-- body -->
+		<rect x="665" y="91" width="62" height="50" rx="14" transform="rotate(6 696 116)" />
+	</g>
+
+	<!-- Fixed-wing aircraft: compact silhouette, nose at the A's apex -->
+	<g fill="#00274C" transform="translate(0,-35)">
+		<!-- swept wing crossing the fuselage -->
+		<path d="M 193,118 L 494,136 L 488,149 L 330,172 L 200,135 Z" />
+
+		<!-- nose / fuselage tapering down to the landing gear -->
+		<path d="M 310,151 L 330,198 L 350,151 C 343,160 317,160 310,151 Z" />
+
+		<!-- canopy -->
+		<ellipse cx="330" cy="144" rx="13" ry="7" />
+		<path d="M 339,139 L 362,126" stroke="#00274C" stroke-width="3.2" stroke-linecap="round" />
+
+		<!-- tail fin -->
+		<path d="M 429,142 L 481,80 L 513,102 L 480,150 L 455,159 Z" />
+
+		<!-- landing gear -->
+		<path d="M 320,188 L 311,219" stroke="#00274C" stroke-width="5" stroke-linecap="round" />
+		<path d="M 340,190 L 350,221" stroke="#00274C" stroke-width="5" stroke-linecap="round" />
+		<circle cx="310" cy="225" r="7" />
+		<circle cx="352" cy="227" r="7" />
+	</g>
+
+	<!-- Wordmark — painted last so it always reads clearly on top -->
+	<g fill="#333333" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900">
+		<text x="-6" y="305" font-size="195">M</text>
+		<text x="562" y="305" font-size="195">S</text>
+		<text x="732" y="305" font-size="195">T</text>
+	</g>
+</svg>

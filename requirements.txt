@@ -1,0 +1,35 @@
+2.4.1 Deliverable Requirements
+
+    Website Content: Layout and detailed contents of the website are left for the teams to develop; however, the team website must include:
+
+        Current team name and contact information
+
+        Vehicle photos and/or videos
+
+        Supporting media, which may include:
+
+            Instructional/Informative videos
+
+            Procedures (text, images)
+
+            Design decision documentation (text, images, videos)
+
+            Blogs for historical records of build progress
+
+        List of sponsors with logos
+
+    Website Quality: Websites are often the first impression of a project. Potential supporters such as supervisors, sponsors, or advisors must find the website visually appealing and easy to navigate. Development of the website should include careful consideration of user experience, including:
+
+        Written in English, or English translation provided
+
+        Clear prioritization of key content
+
+        Site search functionality
+
+        Basic design elements: contrast, repetition, alignment and grouping to organize/highlight content
+
+        User accessibility, as defined by the W3C Web Accessibility Initiative: www.w3.org/WAI
+
+        Cross browser compatibility for modern web browsers (Chrome, Firefox, Safari, MS Edge)
+
+        A mobile friendly display

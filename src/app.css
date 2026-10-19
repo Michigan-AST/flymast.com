@@ -1,0 +1,294 @@
+/* MAST site theme — University of Michigan colors (maize & blue) */
+:root {
+	--blue: #00274c;
+	--blue-dark: #001527;
+	--blue-mid: #0d3a66;
+	--maize: #ffcb05;
+	--maize-dark: #d9a900;
+	--cream: #f5f4ef;
+	--ink: #16181d;
+	--ink-soft: #4a4f58;
+	--line: #e2e0d8;
+	--white: #ffffff;
+	--radius: 14px;
+	--max-width: 1180px;
+	--shadow: 0 10px 30px rgba(0, 20, 40, 0.08);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family:
+		'Inter',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+	background: var(--cream);
+	color: var(--ink);
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+	letter-spacing: -0.01em;
+	line-height: 1.1;
+	color: var(--blue);
+	margin: 0 0 0.5em;
+}
+
+h1 {
+	font-size: clamp(2.2rem, 5vw, 3.4rem);
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 0 0 1em;
+	color: var(--ink-soft);
+}
+
+a {
+	color: var(--blue-mid);
+	text-decoration-color: var(--maize);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+	outline: 3px solid var(--maize);
+	outline-offset: 2px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.section {
+	padding: 4.5rem 0;
+}
+
+.section-alt {
+	background: var(--white);
+	border-top: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
+}
+
+.section-navy {
+	background: var(--blue);
+	color: var(--white);
+}
+
+.section-navy h2,
+.section-navy h3 {
+	color: var(--white);
+}
+
+.section-navy p {
+	color: rgba(255, 255, 255, 0.82);
+}
+
+.eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 700;
+	font-size: 0.78rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--blue);
+	margin-bottom: 0.75rem;
+}
+
+.eyebrow::before {
+	content: '';
+	width: 22px;
+	height: 4px;
+	background: var(--maize);
+	border-radius: 2px;
+}
+
+.lede {
+	font-size: 1.15rem;
+	max-width: 62ch;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.4rem;
+	border-radius: 999px;
+	font-weight: 700;
+	font-size: 0.95rem;
+	text-decoration: none;
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition:
+		transform 0.15s ease,
+		background 0.15s ease,
+		color 0.15s ease;
+}
+
+.btn:hover {
+	transform: translateY(-1px);
+}
+
+.btn-maize {
+	background: var(--maize);
+	color: var(--blue-dark);
+}
+
+.btn-maize:hover {
+	background: var(--maize-dark);
+}
+
+.btn-outline {
+	border-color: currentColor;
+	color: inherit;
+	background: transparent;
+}
+
+.btn-outline-light {
+	border-color: rgba(255, 255, 255, 0.6);
+	color: var(--white);
+}
+
+.btn-outline-light:hover {
+	border-color: var(--white);
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.grid-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+	.grid-3,
+	.grid-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.grid-2,
+	.grid-3,
+	.grid-4 {
+		grid-template-columns: 1fr;
+	}
+
+	.section {
+		padding: 3rem 0;
+	}
+}
+
+.card {
+	background: var(--white);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	padding: 1.75rem;
+}
+
+.card-dark {
+	background: var(--blue);
+	color: var(--white);
+	border-color: var(--blue);
+}
+
+.badge {
+	display: inline-block;
+	padding: 0.2rem 0.6rem;
+	border-radius: 999px;
+	background: var(--cream);
+	border: 1px solid var(--line);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: var(--blue);
+	text-transform: uppercase;
+}
+
+.skip-link {
+	position: absolute;
+	left: -999px;
+	top: 0;
+	background: var(--maize);
+	color: var(--blue-dark);
+	padding: 0.75rem 1.25rem;
+	font-weight: 700;
+	z-index: 1000;
+	border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+	left: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid var(--line);
+}
+
+th {
+	color: var(--blue);
+	font-size: 0.8rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.table-wrap {
+	overflow-x: auto;
+	border-radius: var(--radius);
+	border: 1px solid var(--line);
+	background: var(--white);
+}
