@@ -1,5 +1,6 @@
 <script>
 	import { missionFacts, vehicleSnapshot, keyFindings } from '$lib/data/requirements.js';
+	import SpotlightImage from '$lib/components/SpotlightImage.svelte';
 
 	const snapshot = vehicleSnapshot.slice(0, 6);
 </script>
@@ -68,7 +69,7 @@
 	</div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
 	<div class="container">
 		<p class="eyebrow">What We Learned at SRR</p>
 		<h2>Key findings driving the design</h2>
@@ -78,17 +79,25 @@
 			{/each}
 		</ul>
 	</div>
-</section>
+</section> -->
 
 <section class="section section-alt">
-	<div class="container">
-		<p class="eyebrow">Media</p>
-		<h2>Follow the build</h2>
-		<p class="lede">
-			Photos, CAD renders, and flight test footage will land here as the vehicle comes
-			together through the year.
-		</p>
-		<a class="btn btn-outline" href="/media">Visit the media gallery →</a>
+	<div class="container media-grid">
+		<div>
+			<p class="eyebrow">Media</p>
+			<h2>Follow the build</h2>
+			<p class="lede">
+				Photos, CAD renders, and flight test footage will land here as the vehicle comes
+				together through the year.
+			</p>
+			<a class="btn btn-outline" href="/media">Visit the media gallery →</a>
+		</div>
+		<SpotlightImage
+			src="/media/LeftWingConcept.png"
+			alt="CAD concept render of the aircraft's left wing"
+			caption="Left wing, concept render"
+			klass="media-photo"
+		/>
 	</div>
 </section>
 
@@ -163,6 +172,23 @@
 
 	.findings li {
 		font-size: 1.05rem;
+	}
+
+	.media-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		gap: 2.5rem;
+		align-items: center;
+	}
+
+	:global(.media-photo) {
+		margin: 0;
+	}
+
+	@media (max-width: 760px) {
+		.media-grid {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.cta-band {

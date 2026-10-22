@@ -22,7 +22,7 @@
 	</div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
 	<div class="container">
 		<p class="eyebrow">Sponsorship Tiers</p>
 		<h2>Ways to support the team</h2>
@@ -35,7 +35,7 @@
 			{/each}
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="section section-alt">
 	<div class="container">

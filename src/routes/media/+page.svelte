@@ -1,5 +1,6 @@
 <script>
 	import { milestones } from '$lib/data/requirements.js';
+	import SpotlightImage from '$lib/components/SpotlightImage.svelte';
 
 	const categories = [
 		{
@@ -44,6 +45,31 @@
 	</div>
 </section>
 
+<section class="section section-alt">
+	<div class="container">
+		<p class="eyebrow">This Season</p>
+		<h2>Early work</h2>
+		<p class="lede">
+		</p>
+		<div class="season-photos">
+			<SpotlightImage
+				desc="First concept render of the left wing as the vehicle architecture comes together."
+				src="/media/LeftWingConcept.png"
+				alt="CAD concept render of the aircraft's left wing"
+				caption="Left wing, concept render"
+			/>
+		<br/>
+		<SpotlightImage
+			desc="Getting the software-in-the-loop tech stack running"
+			src="/media/px4-sitl-docker-build.png"
+			alt="Terminal output of the PX4 SITL simulation Docker build"
+			caption="PX4 SITL simulation, Docker build"
+			klass="feature-photo-minor"
+		/>
+		</div>
+	</div>
+</section>
+
 <section class="section">
 	<div class="container">
 		<p class="eyebrow">From Last Season</p>
@@ -52,10 +78,11 @@
 			Our previous vehicle in a wind tunnel test. The lessons from that build directly shape this
 			year's requirements and architecture.
 		</p>
-		<figure class="feature-photo">
-			<img src="/media/wind-tunnel-2025.png" alt="Last season's vehicle mounted in a wind tunnel test section" />
-			<figcaption>2025 vehicle, wind tunnel test</figcaption>
-		</figure>
+		<SpotlightImage
+			src="/media/wind-tunnel-2025.png"
+			alt="Last season's vehicle mounted in a wind tunnel test section"
+			caption="2025 vehicle, wind tunnel test"
+		/>
 	</div>
 </section>
 
@@ -104,26 +131,25 @@
 		padding: 3.5rem 0;
 	}
 
-	.feature-photo {
-		margin: 1.5rem 0 0;
-		border: 1px solid var(--line);
-		border-radius: var(--radius);
-		overflow: hidden;
-		background: var(--white);
-		max-width: 640px;
+	.season-photos {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+		align-items: flex-start;
 	}
 
-	.feature-photo img {
-		width: 100%;
-		display: block;
+	.season-photos :global(.feature-photo) {
+		margin-top: 1.5rem;
 	}
 
-	.feature-photo figcaption {
-		padding: 0.75rem 1rem;
-		font-size: 0.85rem;
-		font-weight: 700;
-		color: var(--blue-mid);
-		border-top: 1px solid var(--line);
+	:global(.feature-photo-minor) {
+		max-width: 320px;
+		opacity: 0.9;
+	}
+
+	:global(.feature-photo-minor figcaption) {
+		font-size: 0.78rem;
+		font-weight: 600;
 	}
 
 	.roadmap-grid {
