@@ -58,14 +58,13 @@
 				alt="CAD concept render of the aircraft's left wing"
 				caption="Left wing, concept render"
 			/>
-		<br/>
-		<SpotlightImage
-			desc="Getting the software-in-the-loop tech stack running"
-			src="/media/px4-sitl-docker-build.png"
-			alt="Terminal output of the PX4 SITL simulation Docker build"
-			caption="PX4 SITL simulation, Docker build"
-			klass="feature-photo-minor"
-		/>
+			<SpotlightImage
+				desc="Getting the software-in-the-loop tech stack running"
+				src="/media/px4-sitl-docker-build.png"
+				alt="Terminal output of the PX4 SITL simulation Docker build"
+				caption="PX4 SITL simulation, Docker build"
+				klass="feature-photo-minor"
+			/>
 		</div>
 	</div>
 </section>
@@ -132,18 +131,27 @@
 	}
 
 	.season-photos {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 1.5rem;
-		flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: start;
+	}
+
+	.season-photos :global(.sli-container) {
+		max-width: none;
 	}
 
 	.season-photos :global(.feature-photo) {
 		margin-top: 1.5rem;
 	}
 
+	@media (max-width: 720px) {
+		.season-photos {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	:global(.feature-photo-minor) {
-		max-width: 320px;
 		opacity: 0.9;
 	}
 
