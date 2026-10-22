@@ -6,6 +6,7 @@
 	export let caption = '';
 	export let klass = '';
 	export let desc = '';
+	export let date = '';
 </script>
 
 <div class="sli-container">
@@ -22,8 +23,10 @@
 		<img {src} {alt} loading="lazy" />
 		<span class="spotlight-hint" aria-hidden="true">Expand ⤢</span>
 	</button>
-	{#if caption}
-		<figcaption>{caption}</figcaption>
+	{#if caption || date}
+		<figcaption>
+			{caption}{#if date}<span class="sli-date">{date}</span>{/if}
+		</figcaption>
 	{/if}
 </figure>
 </div>
@@ -58,6 +61,15 @@
 		font-weight: 700;
 		color: var(--blue-mid);
 		border-top: 1px solid var(--line);
+		display: flex;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.sli-date {
+		font-weight: 600;
+		color: var(--ink-soft);
+		white-space: nowrap;
 	}
 
 	.spotlight-trigger {

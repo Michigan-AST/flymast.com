@@ -1,5 +1,6 @@
 <script>
 	import { missionFacts, vehicleSnapshot, keyFindings } from '$lib/data/requirements.js';
+	import { mostRecentMedia } from '$lib/data/media.js';
 	import SpotlightImage from '$lib/components/SpotlightImage.svelte';
 
 	const snapshot = vehicleSnapshot.slice(0, 6);
@@ -53,21 +54,7 @@
 	</div>
 </section>
 
-<section class="section section-alt">
-	<div class="container">
-		<p class="eyebrow">Vehicle Snapshot</p>
-		<h2>Built around hard constraints</h2>
-		<div class="grid grid-3 snapshot-grid">
-			{#each snapshot as s (s.label)}
-				<div class="card">
-					<span class="badge">{s.label}</span>
-					<p class="snapshot-value">{s.value}</p>
-				</div>
-			{/each}
-		</div>
-		<a class="btn btn-outline" href="/vehicle">See full requirements &amp; architecture →</a>
-	</div>
-</section>
+
 
 <!-- <section class="section">
 	<div class="container">
@@ -93,11 +80,26 @@
 			<a class="btn btn-outline" href="/media">Visit the media gallery →</a>
 		</div>
 		<SpotlightImage
-			src="/media/LeftWingConcept.png"
-			alt="CAD concept render of the aircraft's left wing"
-			caption="Left wing, concept render"
+			{...mostRecentMedia}
+			desc="Most recent addition to the gallery"
 			klass="media-photo"
 		/>
+	</div>
+</section>
+
+<section class="section section-alt">
+	<div class="container">
+		<p class="eyebrow">Vehicle Snapshot</p>
+		<h2>Built around hard constraints</h2>
+		<div class="grid grid-3 snapshot-grid">
+			{#each snapshot as s (s.label)}
+				<div class="card">
+					<span class="badge">{s.label}</span>
+					<p class="snapshot-value">{s.value}</p>
+				</div>
+			{/each}
+		</div>
+		<a class="btn btn-outline" href="/vehicle">See full requirements &amp; architecture →</a>
 	</div>
 </section>
 

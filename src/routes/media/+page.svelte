@@ -1,5 +1,6 @@
 <script>
 	import { milestones } from '$lib/data/requirements.js';
+	import { mediaItems, sortByDateDesc } from '$lib/data/media.js';
 	import SpotlightImage from '$lib/components/SpotlightImage.svelte';
 
 	const categories = [
@@ -24,6 +25,11 @@
 		CDR: 'Build and integration photos as hardware comes together.',
 		FRR: 'Flight test video and the Proof of Flight Readiness submission.'
 	};
+
+	const seasonPhotos = sortByDateDesc(
+		mediaItems.filter((item) => item.src !== '/media/wind-tunnel-2025.png')
+	);
+	const lastSeasonPhoto = mediaItems.find((item) => item.src === '/media/wind-tunnel-2025.png');
 </script>
 
 <svelte:head>
@@ -49,22 +55,10 @@
 	<div class="container">
 		<p class="eyebrow">This Season</p>
 		<h2>Early work</h2>
-		<p class="lede">
-		</p>
 		<div class="season-photos">
-			<SpotlightImage
-				desc="First concept render of the left wing as the vehicle architecture comes together."
-				src="/media/LeftWingConcept.png"
-				alt="CAD concept render of the aircraft's left wing"
-				caption="Left wing, concept render"
-			/>
-			<SpotlightImage
-				desc="Getting the software-in-the-loop tech stack running"
-				src="/media/px4-sitl-docker-build.png"
-				alt="Terminal output of the PX4 SITL simulation Docker build"
-				caption="PX4 SITL simulation, Docker build"
-				klass="feature-photo-minor"
-			/>
+			{#each seasonPhotos as photo (photo.src)}
+				<SpotlightImage {...photo} />
+			{/each}
 		</div>
 	</div>
 </section>
@@ -77,11 +71,7 @@
 			Our previous vehicle in a wind tunnel test. The lessons from that build directly shape this
 			year's requirements and architecture.
 		</p>
-		<SpotlightImage
-			src="/media/wind-tunnel-2025.png"
-			alt="Last season's vehicle mounted in a wind tunnel test section"
-			caption="2025 vehicle, wind tunnel test"
-		/>
+		<SpotlightImage {...lastSeasonPhoto} />
 	</div>
 </section>
 
@@ -89,10 +79,10 @@
 	<div class="container">
 		<p class="eyebrow">What's Coming</p>
 		<h2>New media lands at each design review</h2>
-		<p class="lede">
+		<!-- <p class="lede">
 			The build log already tracks real progress; photos and video get attached to it as we hit
 			each gate below.
-		</p>
+		</p> -->
 		<div class="grid grid-4 roadmap-grid">
 			{#each milestones as m (m.gate)}
 				<div class="card roadmap-card">
@@ -105,7 +95,7 @@
 		<a class="btn btn-outline" href="/updates">Follow the build log →</a>
 	</div>
 </section>
-
+<!-- 
 <section class="section">
 	<div class="container">
 		<p class="eyebrow">Categories</p>
@@ -123,7 +113,7 @@
 			{/each}
 		</div>
 	</div>
-</section>
+</section> -->
 
 <style>
 	.hero {
